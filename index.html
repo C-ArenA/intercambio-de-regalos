@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>🎁 Calculadora para intercambio de regalos</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Intercambio de Regalos</h1>
+		<div class="lasso">
+			<div class="lasso-circle"></div>
+		</div>
+		<p>by: C-ArenA</p>
+	</header>
+	<main>
+		<div class="paper">
+			<h2>Ésta es la lista de amigos inscritos en esta actividad:</h2>
+			<div id="friendsListContainer">
+				<div class="friends-list no-friends" id="friendsList">
+					<!--<div class="friend-card" id="friend#">
+						<p>Carlos ArenaOso</p>
+						<p>Carlos ArenaOso</p>
+						<button id="delete#">Eliminar</button>
+						<button id="update#">Modificar</button>
+
+					</div>
+					-->
+					<h3 style="color:black">La lista está vacía 😫</h3>
+				</div>
+			</div>
+			<button class="add-button" id="addButton">Añadir</button>
+		</div>
+		<button class="recalc-button" id="recalcButton">Calcular Intercambio</button>
+	</main>
+
+	<div class="overlay overlay-hidden" id="overlay">
+		<form action="">
+			<label for="name">Ingresa tu nombre:</label>
+			<input type="text" name="name" id="newName" placeholder="Tu nombre o apodo" autocomplete="off">
+			<input type="hidden" name="isUpdate" id="isUpdate" value="-1">
+			<input type="submit" class="ok-button" id="okButton" value="OK">
+		</form>
+	</div>
+	<!--
+	<button id="testButton" style="position: fixed;bottom: 130px;right:50px;">Testear</button>
+	-->
+	<footer>
+		<p><b>Calculadora de intercambio de Regalos</b> es una aplicación desarrollada por C-ArenA</p>
+		<p>2021</p>
+	</footer>
+	<script src="main.js"></script>
+	
+</body>
+</html>
+
+<!--
+	TODO:
+	* Poder elimiar amigo
+	* Poder modificar amigo
+	*** 
+	* Guardar datos en un servidor
+	* Permitir entrar desde diferentes computadoras
+	* Permitir a cada persona un solo usuario
+	* 
+-->
